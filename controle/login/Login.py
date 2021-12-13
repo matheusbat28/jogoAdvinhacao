@@ -41,6 +41,7 @@ class Login(QMainWindow, Ui_MainWindow):
             self.jogo.show()
             self.close()
 
+
     def entrarCadatro(self):
         self.cadastro.show()
 
