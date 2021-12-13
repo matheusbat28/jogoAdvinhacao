@@ -15,6 +15,7 @@ class Cadastro(QMainWindow, Ui_MainWindow):
         self.btLimpar.clicked.connect(self.limpar)
         self.varSenha.setEchoMode(QLineEdit.Password)
         self.varSenhaNV.setEchoMode(QLineEdit.Password)
+        self.btEntrar.clicked.connect(self.entrar)
 
     def cadastrar(self):
         nome = self.varNme.text().strip()
@@ -42,3 +43,6 @@ class Cadastro(QMainWindow, Ui_MainWindow):
         self.varUsuario.clear()
         self.varSenha.clear()
         self.varSenhaNV.clear()
+
+    def entrar(self):
+        self.close()
